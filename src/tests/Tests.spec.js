@@ -14,8 +14,8 @@ export const options = {
     content_OK: ['rate>0.95']
   },
   stages: [
-    { duration: '10s', target: 2 },
-    { duration: '15s', target: 5 }
+    { duration: '5s', target: 2 },
+    { duration: '5s', target: 6 }
   ]
 };
 
@@ -27,7 +27,7 @@ export function handleSummary(data) {
 }
 
 export default function () {
-  const baseUrl = 'https://petstore.swagger.io/v2/store/inventory';
+  const baseUrl = 'https://test.k6.io/';
 
   const params = {
     headers: {
